@@ -42,20 +42,36 @@ public class HBI_LoginPageTest extends TestBase
 		login = new HBI_LoginPage();
 	}
 	
-	@Test(priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.startTest("verifyMOHFWLogo");
 		boolean value = login.mohfwLogo();
-		System.out.println("Value is " +value);
 		Assert.assertEquals(value, true);
 	}
-	@Test(priority = 2)
+	
+	@Test(enabled = true, priority = 2)
+	public void verifyHBILogo() throws EncryptedDocumentException, IOException
+	{
+		test = extent.startTest("verifyHBILogo");
+		boolean value = login.hbiLogo();
+		Assert.assertEquals(value, true);
+	}
+	
+	@Test(enabled = false, priority = 4)
 	public void verifyLoginToHBITest() throws InterruptedException, IOException
 	{
 		test = extent.startTest("verifyLoginToHBITest");
 		boolean value = login.loginToHBIforHP();
 		Assert.assertEquals(value, true);
+	}
+	
+	@Test(enabled = false, priority = 3)
+	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
+	{
+		String expectedURL = "https://www.mohfw.gov.in/";
+		String actualURL = login.mofhwLink();
+		Assert.assertEquals(actualURL, expectedURL);
 	}
 	
 	@AfterMethod

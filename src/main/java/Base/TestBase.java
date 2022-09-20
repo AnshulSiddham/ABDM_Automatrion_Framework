@@ -39,11 +39,12 @@ public class TestBase extends Listener
 		String browserName = readPropertyFile("browser");
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\10711204\\Desktop\\First push\\ABDM_Automatrion_Framework\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\10711204\\Desktop\\First push\\"
+			                                       	+ "ABDM_Automatrion_Framework\\Drivers\\chromedriver.exe");
 		ChromeOptions opt = new ChromeOptions(); 
 		opt.addArguments("--disable-notifications"); // to disable browser exception
 	//	opt.addArguments("--incognito"); // to run the test in incognito mode 
-		opt.addArguments("--headless");
+	//	opt.addArguments("--headless");
 		opt.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		opt.addArguments("--no-sandbox"); // Bypass OS security model
 		opt.addArguments("disable-infobars"); // disabling infobars
@@ -76,9 +77,9 @@ public class TestBase extends Listener
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies(); 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(readPropertyFile("url"));
-		
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
 	

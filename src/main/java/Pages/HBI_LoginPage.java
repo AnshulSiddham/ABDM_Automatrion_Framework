@@ -5,6 +5,7 @@ import java.net.SecureCacheResponse;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -54,7 +55,24 @@ public class HBI_LoginPage extends TestBase
 
 		Thread.sleep(2000);
 		return logoutBtn.isDisplayed();    
-		
+	}
+	public boolean hbiLogo() throws EncryptedDocumentException, IOException
+	{
+		WebElement hbiLogo = driver.findElement(By.xpath(ReadExcel.readExcelFile(13, 1)));
+		boolean value = hbiLogo.isDisplayed();
+		return value;
+	}
+	
+	public String mofhwLink() throws EncryptedDocumentException, IOException, InterruptedException
+	{
+		WebElement mohfwLink = driver.findElement(By.xpath(ReadExcel.readExcelFile(14, 1)));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView();", mohfwLink);
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", mohfwLink);
+		Thread.sleep(2000);
+		System.out.println("URL = " +driver.getCurrentUrl());
+		return driver.getCurrentUrl();
 	}
 }
 

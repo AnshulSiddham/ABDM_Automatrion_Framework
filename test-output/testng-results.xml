@@ -1,80 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T15:46:59 IST" name="Default suite" finished-at="2022-09-20T15:47:25 IST" duration-ms="26263">
+  <suite started-at="2022-09-20T18:04:58 IST" name="Default suite" finished-at="2022-09-20T18:05:13 IST" duration-ms="15361">
     <groups>
     </groups>
-    <test started-at="2022-09-20T15:46:59 IST" name="Default test" finished-at="2022-09-20T15:47:25 IST" duration-ms="26263">
+    <test started-at="2022-09-20T18:04:58 IST" name="Default test" finished-at="2022-09-20T18:05:13 IST" duration-ms="15361">
       <class name="TestCases_UI.HBI_LoginPageTest">
-        <test-method is-config="true" signature="extentReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:46:59 IST" name="extentReport" finished-at="2022-09-20T15:46:59 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="extentReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:04:58 IST" name="extentReport" finished-at="2022-09-20T18:04:58 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:46:59 IST" name="setup" finished-at="2022-09-20T15:47:01 IST" duration-ms="2580" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:04:58 IST" name="setup" finished-at="2022-09-20T18:05:00 IST" duration-ms="2329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMOHFWLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:01 IST" name="verifyMOHFWLogo" finished-at="2022-09-20T15:47:07 IST" duration-ms="5708" status="PASS">
+        <test-method signature="verifyMOHFWLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:00 IST" name="verifyMOHFWLogo" finished-at="2022-09-20T18:05:06 IST" duration-ms="5561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMOHFWLogo -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:07 IST" name="exit" finished-at="2022-09-20T15:47:07 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:06 IST" name="exit" finished-at="2022-09-20T18:05:06 IST" duration-ms="190" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMOHFWLogo status=SUCCESS method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5656be13] output={null}]]]>
+                <![CDATA[[TestResult name=verifyMOHFWLogo status=SUCCESS method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@76505305] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:07 IST" name="setup" finished-at="2022-09-20T15:47:09 IST" duration-ms="1662" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:06 IST" name="setup" finished-at="2022-09-20T18:05:07 IST" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginToHBITest()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:09 IST" name="verifyLoginToHBITest" finished-at="2022-09-20T15:47:25 IST" duration-ms="15692" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyHBILogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:07 IST" name="verifyHBILogo" finished-at="2022-09-20T18:05:12 IST" duration-ms="5102" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
-  (Session info: headless chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'LTILPUN22001550', ip: '172.20.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57a2a3e3d880277ed1efea850d395c88, findElement {using=xpath, value=//button[text()='Submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\10711204\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57a2a3e3d880277ed1efea850d395c88]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
-  (Session info: headless chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'LTILPUN22001550', ip: '172.20.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57a2a3e3d880277ed1efea850d395c88, findElement {using=xpath, value=//button[text()='Submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\10711204\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57844}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57844/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 57a2a3e3d880277ed1efea850d395c88
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at Pages.HBI_LoginPage.loginToHBIforHP(HBI_LoginPage.java:29)
-at TestCases_UI.HBI_LoginPageTest.verifyLoginToHBITest(HBI_LoginPageTest.java:57)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at TestCases_UI.HBI_LoginPageTest.verifyHBILogo(HBI_LoginPageTest.java:58)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,22 +78,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginToHBITest -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:25 IST" name="exit" finished-at="2022-09-20T15:47:25 IST" duration-ms="220" status="PASS">
+        </test-method> <!-- verifyHBILogo -->
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:12 IST" name="exit" finished-at="2022-09-20T18:05:13 IST" duration-ms="285" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginToHBITest status=FAILURE method=HBI_LoginPageTest.verifyLoginToHBITest()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5656be13] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHBILogo status=FAILURE method=HBI_LoginPageTest.verifyHBILogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@76505305] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5656be13]" started-at="2022-09-20T15:47:25 IST" name="endReport" finished-at="2022-09-20T15:47:25 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@76505305]" started-at="2022-09-20T18:05:13 IST" name="endReport" finished-at="2022-09-20T18:05:13 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
