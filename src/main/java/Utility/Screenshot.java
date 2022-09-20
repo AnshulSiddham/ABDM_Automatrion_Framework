@@ -20,22 +20,12 @@ import Base.TestBase;
 
 public class Screenshot extends TestBase
 {
-//	public static String screenshot(String name) throws IOException
-//	{
-//		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//		File dest = new File("C:\\Users\\10711204\\eclipse-workspace\\Automation_UI\\"
-//		           		+ "Screenshots_Failed\\"+name+".png");
-//		FileUtils.copyFile(source, dest);
-//	    FileHandler.copy(source, dest); 
-//		return dest.getAbsolutePath();
-//		
-//	}
 	public static String getScreenshot(String name) throws IOException
 	{
 		String dateName = new SimpleDateFormat("yyyyddmmhhmmss").format(new Date());
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File("C:\\Users\\10711204\\eclipse-workspace\\Automation_UI\\"
-		           		+ "Screenshots_Failed\\"+name+".png");
+		File dest = new File("C:\\Users\\10711204\\Desktop\\First push\\ABDM_Automatrion_Framework\\"
+			                 	+ "Screenshots_Failed\\"+name+".png");
 		FileUtils.copyFile(source, dest);
 //	    FileHandler.copy(source, dest); 
 		return dest.getAbsolutePath();

@@ -42,7 +42,7 @@ public class HBI_LoginPageTest extends TestBase
 		login = new HBI_LoginPage();
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.startTest("verifyMOHFWLogo");
@@ -50,7 +50,7 @@ public class HBI_LoginPageTest extends TestBase
 		System.out.println("Value is " +value);
 		Assert.assertEquals(value, true);
 	}
-	@Test
+	@Test(priority = 2)
 	public void verifyLoginToHBITest() throws InterruptedException, IOException
 	{
 		test = extent.startTest("verifyLoginToHBITest");

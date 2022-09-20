@@ -21,14 +21,14 @@ import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import ExtentReport_Listener.Listener;
-//jhvyuhiurwvnkjvhdwuiheviniudwvhguyhvedwuihdew
+
 public class TestBase extends Listener
 {
 	public String readPropertyFile(String value) throws IOException
 	{
 		Properties prop = new Properties();
-		FileInputStream file = new FileInputStream("C:\\Users\\10711204\\eclipse-workspace\\"
-			                       	+ "Automation_UI\\src\\main\\java\\Config\\Config.properties");
+		FileInputStream file = new FileInputStream("C:\\Users\\10711204\\Desktop\\First push\\"
+		                		+ "ABDM_Automatrion_Framework\\src\\main\\java\\Config\\Config.properties");
 		prop.load(file);
 		return prop.getProperty(value);			
 	}
@@ -39,11 +39,11 @@ public class TestBase extends Listener
 		String browserName = readPropertyFile("browser");
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\10711204\\eclipse-workspace\\Automation_UI\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\10711204\\Desktop\\First push\\ABDM_Automatrion_Framework\\Drivers\\chromedriver.exe");
 		ChromeOptions opt = new ChromeOptions(); 
 		opt.addArguments("--disable-notifications"); // to disable browser exception
 	//	opt.addArguments("--incognito"); // to run the test in incognito mode 
-	//	opt.addArguments("--headless");
+		opt.addArguments("--headless");
 		opt.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		opt.addArguments("--no-sandbox"); // Bypass OS security model
 		opt.addArguments("disable-infobars"); // disabling infobars
@@ -59,8 +59,8 @@ public class TestBase extends Listener
 		{
 			FirefoxOptions opt1 = new FirefoxOptions();
 		    opt1.addArguments("--disable-notifications");
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\10711204\\Downloads\\"
-			            		+ "Project1\\Project1\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\10711204\\Desktop\\"
+			            		+ "First push\\ABDM_Automatrion_Framework\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver(opt1);
 		}
 			
