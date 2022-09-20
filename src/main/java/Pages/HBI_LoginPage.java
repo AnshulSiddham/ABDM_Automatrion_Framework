@@ -56,6 +56,7 @@ public class HBI_LoginPage extends TestBase
 		Thread.sleep(2000);
 		return logoutBtn.isDisplayed();    
 	}
+	// demo and nothing
 	public boolean hbiLogo() throws EncryptedDocumentException, IOException
 	{
 		WebElement hbiLogo = driver.findElement(By.xpath(ReadExcel.readExcelFile(13, 1)));
