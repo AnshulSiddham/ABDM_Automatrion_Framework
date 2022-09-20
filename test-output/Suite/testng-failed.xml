@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.DashboardTest">
+        <methods>
+          <include name="exit"/>
+          <include name="deleteGttTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.DashboardTest -->
+      <class name="TestCases.DependsOnLoginPageTest">
+        <methods>
+          <include name="verifyTitleTest"/>
+          <include name="setup"/>
+          <include name="verifyKiteLogoTest"/>
+          <include name="verifyZerodhaLogoTest"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- TestCases.DependsOnLoginPageTest -->
+      <class name="TestCases.LoginPageTest">
+        <methods>
+          <include name="verifyLoginToAppTest"/>
+          <include name="exit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.LoginPageTest -->
+      <class name="TestCases.GroupTest">
+        <methods>
+          <include name="verifyKiteLogoTest"/>
+          <include name="exit"/>
+          <include name="verifyTitleTest"/>
+          <include name="verifyLoginToAppTest"/>
+          <include name="setup"/>
+          <include name="verifyZerodhaLogoTest"/>
+        </methods>
+      </class> <!-- TestCases.GroupTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
