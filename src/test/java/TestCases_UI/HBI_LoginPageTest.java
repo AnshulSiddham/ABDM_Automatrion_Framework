@@ -1,5 +1,7 @@
 package TestCases_UI;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -16,13 +18,12 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Base.TestBase;
-import Pages.HBI_LoginPage;
-import Pages.HBI_LoginPage2;
+import Module_HBI.LoginPage;
 import Utility.Screenshot;
 
 public class HBI_LoginPageTest extends TestBase
 {
-	HBI_LoginPage login;
+	LoginPage login;
 	
 	@BeforeTest
 	public void extentReport()
@@ -40,15 +41,15 @@ public class HBI_LoginPageTest extends TestBase
 	public void setup() throws IOException
 	{
 		initialization();
-		login = new HBI_LoginPage();
+		login = new LoginPage();
 	}
 	
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.startTest("verifyMOHFWLogo");
 		boolean value = login.mohfwLogo();
-		Assert.assertEquals(value, true);
+		AssertJUnit.assertEquals(value, true);
 	}
 	
 	@Test(enabled = true, priority = 2)
@@ -56,15 +57,16 @@ public class HBI_LoginPageTest extends TestBase
 	{
 		test = extent.startTest("verifyHBILogo");
 		boolean value = login.azadiLogo();
-		Assert.assertEquals(value, true);
+		AssertJUnit.assertEquals(value, true);
 	}
 	
 	@Test(enabled = false, priority = 3)
 	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
+		test = extent.startTest("verifymohfwLink");
 		String expectedURL = "https://www.mohfw.gov.in/";
 		String actualURL = login.mohfwLink();
-		Assert.assertEquals(actualURL, expectedURL);
+		AssertJUnit.assertEquals(actualURL, expectedURL);
 	}
 	
 	@Test(enabled = false, priority = 4)
@@ -72,7 +74,7 @@ public class HBI_LoginPageTest extends TestBase
 	{
 		test = extent.startTest("verifyLoginToHBIforHP");
 		boolean value = login.loginToHBIforHP();
-		Assert.assertEquals(value, true);
+		AssertJUnit.assertEquals(value, true);
 	}
 	
 	@Test(enabled = true, priority = 5)
@@ -81,7 +83,7 @@ public class HBI_LoginPageTest extends TestBase
 		test = extent.startTest("verifyloginToHBIforNodalOfficer");
 		String actualValue = login.loginToHBIforNodalOfficer();
 		String  expectedValue = "Chandra DV";
-		Assert.assertEquals(actualValue, expectedValue);
+		AssertJUnit.assertEquals(actualValue, expectedValue);
 	}
 	
 	
