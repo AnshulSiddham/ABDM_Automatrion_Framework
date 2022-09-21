@@ -15,15 +15,17 @@ import Utility.ReadExcel;
 
 public class HBI_LoginPage extends TestBase
 {
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	
 	public boolean mohfwLogo() throws EncryptedDocumentException, IOException
 	{
 		WebElement mohfwLogo1                = driver.findElement(By.xpath(ReadExcel.readExcelFile(1, 1)));
 		return mohfwLogo1.isDisplayed();
-	
 	}
+	
 	public boolean loginToHBIforHP() throws InterruptedException, IOException 
 	{
-		WebElement loginRegistrationBtn      = driver.findElement(By.xpath(ReadExcel.readExcelFile(2, 1)));
+		WebElement loginRegistrationBtn      = driver.findElement(By.xpath(ReadExcel.readExcelFile(2, 2)));
 		WebElement healthcareProfessionalOpt = driver.findElement(By.xpath(ReadExcel.readExcelFile(3, 1)));
 		WebElement loginBtn                  = driver.findElement(By.xpath(ReadExcel.readExcelFile(4, 1)));
 		WebElement hpidTextBox               = driver.findElement(By.xpath(ReadExcel.readExcelFile(5, 1)));
@@ -44,9 +46,15 @@ public class HBI_LoginPage extends TestBase
 		hpidTextBox.clear();
 		hpidTextBox.sendKeys(readPropertyFile("username"));	
 		Thread.sleep(2000);
+		try
+		{
 		submitBtn.click();
 		Thread.sleep(2000);
-		System.out.println("Submit Button = " + submitBtn);
+		}
+		catch(Exception e)
+		{
+			submitBtn.click();
+		}
 		loginWithPasswordBtn.click();
 		Thread.sleep(2000);
 		passwordTextBox.sendKeys(readPropertyFile("password"));
@@ -56,18 +64,45 @@ public class HBI_LoginPage extends TestBase
 		Thread.sleep(2000);
 		return logoutBtn.isDisplayed();    
 	}
-	// demo and nothing
-	public boolean hbiLogo() throws EncryptedDocumentException, IOException
+	public String loginToHBIforNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		WebElement hbiLogo = driver.findElement(By.xpath(ReadExcel.readExcelFile(13, 1)));
-		boolean value = hbiLogo.isDisplayed();
+		WebElement loginRegistrationBtn      = driver.findElement(By.xpath(ReadExcel.readExcelFile(2, 2)));
+		loginRegistrationBtn.click();
+		Thread.sleep(2000);
+		WebElement nodalOfficerOpt           = driver.findElement(By.xpath(ReadExcel.readExcelFile(15, 1)));
+		nodalOfficerOpt.click();
+		Thread.sleep(2000);
+		WebElement loginBtn1                 = driver.findElement(By.xpath(ReadExcel.readExcelFile(4, 1)));
+		loginBtn1.click();
+		Thread.sleep(2000);
+		WebElement emailIDTextbox            = driver.findElement(By.id(ReadExcel.readExcelFile(16, 2)));
+		emailIDTextbox.clear();
+		emailIDTextbox.sendKeys(readPropertyFile("Email_ID"));
+		Thread.sleep(2000);
+		WebElement passwordTextBox           = driver.findElement(By.xpath(ReadExcel.readExcelFile(17, 1)));
+		passwordTextBox.clear();
+		passwordTextBox.sendKeys(readPropertyFile("Password"));
+		Thread.sleep(2000);
+		WebElement loginBtn2                 = driver.findElement(By.xpath(ReadExcel.readExcelFile(18, 1)));
+		loginBtn2.click();
+		Thread.sleep(2000);
+		WebElement profileName               = driver.findElement(By.xpath(ReadExcel.readExcelFile(19, 1)));
+		
+		String userName = profileName.getText();
+		System.out.println("USER NAME + " +userName);
+		return userName;
+		
+	}
+	public boolean azadiLogo() throws EncryptedDocumentException, IOException
+	{
+		WebElement azadiLogo = driver.findElement(By.xpath(ReadExcel.readExcelFile(13, 1)));
+		boolean value = azadiLogo.isDisplayed();
 		return value;
 	}
 	
-	public String mofhwLink() throws EncryptedDocumentException, IOException, InterruptedException
+	public String mohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		WebElement mohfwLink = driver.findElement(By.xpath(ReadExcel.readExcelFile(14, 1)));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView();", mohfwLink);
 		Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", mohfwLink);

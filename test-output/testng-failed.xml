@@ -5,10 +5,10 @@
     <classes>
       <class name="TestCases_UI.HBI_LoginPageTest">
         <methods>
+          <include name="verifyloginToHBIforNodalOfficer"/>
           <include name="extentReport"/>
           <include name="setup"/>
           <include name="endReport"/>
-          <include name="verifyHBILogo"/>
           <include name="exit"/>
         </methods>
       </class> <!-- TestCases_UI.HBI_LoginPageTest -->

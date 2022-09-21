@@ -17,6 +17,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import Base.TestBase;
 import Pages.HBI_LoginPage;
+import Pages.HBI_LoginPage2;
 import Utility.Screenshot;
 
 public class HBI_LoginPageTest extends TestBase
@@ -42,7 +43,7 @@ public class HBI_LoginPageTest extends TestBase
 		login = new HBI_LoginPage();
 	}
 	
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = false, priority = 1)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.startTest("verifyMOHFWLogo");
@@ -51,18 +52,10 @@ public class HBI_LoginPageTest extends TestBase
 	}
 	
 	@Test(enabled = true, priority = 2)
-	public void verifyHBILogo() throws EncryptedDocumentException, IOException
+	public void verifyAzadiLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.startTest("verifyHBILogo");
-		boolean value = login.hbiLogo();
-		Assert.assertEquals(value, true);
-	}
-	
-	@Test(enabled = false, priority = 4)
-	public void verifyLoginToHBITest() throws InterruptedException, IOException
-	{
-		test = extent.startTest("verifyLoginToHBITest");
-		boolean value = login.loginToHBIforHP();
+		boolean value = login.azadiLogo();
 		Assert.assertEquals(value, true);
 	}
 	
@@ -70,9 +63,27 @@ public class HBI_LoginPageTest extends TestBase
 	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		String expectedURL = "https://www.mohfw.gov.in/";
-		String actualURL = login.mofhwLink();
+		String actualURL = login.mohfwLink();
 		Assert.assertEquals(actualURL, expectedURL);
 	}
+	
+	@Test(enabled = false, priority = 4)
+	public void verifyLoginToHBIforHP() throws InterruptedException, IOException
+	{
+		test = extent.startTest("verifyLoginToHBIforHP");
+		boolean value = login.loginToHBIforHP();
+		Assert.assertEquals(value, true);
+	}
+	
+	@Test(enabled = true, priority = 5)
+	public void verifyloginToHBIforNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
+	{
+		test = extent.startTest("verifyloginToHBIforNodalOfficer");
+		String actualValue = login.loginToHBIforNodalOfficer();
+		String  expectedValue = "Chandra DV";
+		Assert.assertEquals(actualValue, expectedValue);
+	}
+	
 	
 	@AfterMethod
 	public void exit(ITestResult result) throws IOException 
