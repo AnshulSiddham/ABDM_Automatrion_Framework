@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
-
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -24,10 +22,11 @@ import Utility.Screenshot;
 
 public class Listener
 {
+	 
 	 protected ExtentReports extent;
 	 protected ExtentTest test;
-	
-	public void beforeTest()
+
+	public void beforeSuit()
 	{
 		extent = new ExtentReports(System.getProperty("user.dir")+"/ExtentReport.html", true);
 		extent.addSystemInfo("Host Name", "LTILPUN22001550");
@@ -36,7 +35,7 @@ public class Listener
 		extent.addSystemInfo("OS", "Windows 10");
 	}
 	
-	public void afterTest()
+	public void afterSuit()
 	{
 		extent.flush();
 		extent.close();
@@ -65,6 +64,5 @@ public class Listener
 		
 	}
 	
-	 	
+}	 
 
-}

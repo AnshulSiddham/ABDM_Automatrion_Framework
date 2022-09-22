@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Demo_Suit" class="navigator-link">
+              <span class="suite-name border-failed">Demo_Suit</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\10711204\AppData\Local\Temp\testng-eclipse--359173134\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Demo_Suit" class="navigator-link ">
+                    <span>C:\Users\10711204\Desktop\First push\ABDM_Automatrion_Framework\Test Suit\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Demo_Suit" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Demo_Suit" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Demo_Suit" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Demo_Suit" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Demo_Suit" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Demo_Suit" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Demo_Suit" class="hide-methods failed suite-Demo_Suit"> (hide)</a> <!-- hide-methods failed suite-Demo_Suit -->
+                      <a href="#" panel-name="suite-Demo_Suit" class="show-methods failed suite-Demo_Suit"> (show)</a> <!-- show-methods failed suite-Demo_Suit -->
+                    </span>
+                    <div class="method-list-content failed suite-Demo_Suit">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suit" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyMOHFWLogo">verifyMOHFWLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Demo_Suit -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Demo_Suit" class="hide-methods passed suite-Demo_Suit"> (hide)</a> <!-- hide-methods passed suite-Demo_Suit -->
+                      <a href="#" panel-name="suite-Demo_Suit" class="show-methods passed suite-Demo_Suit"> (show)</a> <!-- show-methods passed suite-Demo_Suit -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Demo_Suit">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases_UI.HBI_HomePageTest" class="method navigator-link" hash-for-method="verifyProfile">verifyProfile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Demo_Suit" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyAzadiLogo">verifyAzadiLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suit" title="TestCases_UI.HBI_HomePageTest" class="method navigator-link" hash-for-method="verifyProfile">verifyProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Demo_Suit -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,8 +137,28 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Demo_Suit" class="panel Demo_Suit">
+          <div class="suite-Demo_Suit-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases_UI.HBI_LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMOHFWLogo">
+                  </a> <!-- verifyMOHFWLogo -->
+                  <span class="method-name">verifyMOHFWLogo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at TestCases_UI.HBI_LoginPageTest.verifyMOHFWLogo(HBI_LoginPageTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Suit-class-failed -->
+          <div class="suite-Demo_Suit-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">TestCases_UI.HBI_HomePageTest</span>
@@ -133,119 +172,185 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Demo_Suit-class-passed -->
+          <div class="suite-Demo_Suit-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases_UI.HBI_LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAzadiLogo">
+                  </a> <!-- verifyAzadiLogo -->
+                  <span class="method-name">verifyAzadiLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Suit-class-passed -->
+        </div> <!-- panel Demo_Suit -->
+        <div panel-name="test-xml-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\10711204\AppData\Local\Temp\testng-eclipse--359173134\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\10711204\Desktop\First push\ABDM_Automatrion_Framework\Test Suit\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Demo_Suit&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentReport_Listener.Demo_Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases_UI.HBI_HomePageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;verifyProfile&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases_UI.HBI_HomePageTest --&gt;
+      &lt;class name=&quot;TestCases_UI.HBI_HomePageTest&quot;/&gt;
+      &lt;class name=&quot;TestCases_UI.HBI_LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Demo_Suit --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Demo_Suit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Demo_Suit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Demo_Suit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Demo_Suit');
+function tableData_Demo_Suit() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyProfile')
-data.setCell(0, 2, 'TestCases_UI.HBI_HomePageTest')
-data.setCell(0, 3, 2149);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'verifyMOHFWLogo')
+data.setCell(0, 2, 'TestCases_UI.HBI_LoginPageTest')
+data.setCell(0, 3, 7226);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAzadiLogo')
+data.setCell(1, 2, 'TestCases_UI.HBI_LoginPageTest')
+data.setCell(1, 3, 7066);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyProfile')
+data.setCell(2, 2, 'TestCases_UI.HBI_HomePageTest')
+data.setCell(2, 3, 6465);
+window.suiteTableData['Demo_Suit']= { tableData: data, tableDiv: 'times-div-Demo_Suit'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <div id="times-div-Demo_Suit">
+              </div> <!-- times-div-Demo_Suit -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Demo_Suit</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases_UI.HBI_LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifymohfwLink</span>
+                <br/>
+                <span class="ignored-method-name">verifyloginToHBIforNodalOfficer</span>
+                <br/>
+                <span class="ignored-method-name">verifyLoginToHBIforHP</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Demo_Suit" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases_UI.HBI_HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">TestCases_UI.HBI_LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
                 <span class="method-name">extentReport</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases_UI.HBI_HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">182 ms</span>
+                <span class="method-start">456 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProfile</span>
-                <span class="method-start">23483 ms</span>
+                <span class="method-start">27978 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">exit([TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instanc...)</span>
-                <span class="method-start">25634 ms</span>
+                <span class="method-start">34451 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases_UI.HBI_LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAzadiLogo</span>
+                <span class="method-start">38709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">exit([TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, in...)</span>
+                <span class="method-start">45779 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">46274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMOHFWLogo</span>
+                <span class="method-start">49397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">exit([TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, in...)</span>
+                <span class="method-start">56626 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">25783 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">57626 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

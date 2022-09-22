@@ -1,18 +1,16 @@
 package TestCases_UI;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -25,16 +23,16 @@ public class HBI_LoginPageTest extends TestBase
 {
 	LoginPage login;
 	
-	@BeforeTest
+	@BeforeSuite
 	public void extentReport()
 	{
-		beforeTest();
+		beforeSuit();
 	}
 	
-	@AfterTest
+	@AfterSuite
 	public void endReport()
 	{
-		afterTest();
+		afterSuit();
 	}
 	
 	@BeforeMethod
@@ -44,46 +42,46 @@ public class HBI_LoginPageTest extends TestBase
 		login = new LoginPage();
 	}
 	
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = true, priority = 2)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
-		test = extent.startTest("verifyMOHFWLogo");
+	    test = extent.startTest("verifyMOHFWLogo");
 		boolean value = login.mohfwLogo();
-		AssertJUnit.assertEquals(value, true);
+		Assert.assertEquals(value, false);
 	}
 	
-	@Test(enabled = true, priority = 2)
+	@Test(enabled = true, priority = 1)
 	public void verifyAzadiLogo() throws EncryptedDocumentException, IOException
 	{
-		test = extent.startTest("verifyHBILogo");
+    	test = extent.startTest("verifyAzadiLogo");
 		boolean value = login.azadiLogo();
-		AssertJUnit.assertEquals(value, true);
+		Assert.assertEquals(value, true);
 	}
 	
 	@Test(enabled = false, priority = 3)
 	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		test = extent.startTest("verifymohfwLink");
+        test = extent.startTest("verifymohfwLink");
 		String expectedURL = "https://www.mohfw.gov.in/";
 		String actualURL = login.mohfwLink();
-		AssertJUnit.assertEquals(actualURL, expectedURL);
+		Assert.assertEquals(actualURL, expectedURL);
 	}
 	
 	@Test(enabled = false, priority = 4)
 	public void verifyLoginToHBIforHP() throws InterruptedException, IOException
 	{
-		test = extent.startTest("verifyLoginToHBIforHP");
+        test = extent.startTest("verifyLoginToHBIforHP");
 		boolean value = login.loginToHBIforHP();
-		AssertJUnit.assertEquals(value, true);
+		Assert.assertEquals(value, true);
 	}
 	
-	@Test(enabled = true, priority = 5)
+	@Test(enabled = false, priority = 5)
 	public void verifyloginToHBIforNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		test = extent.startTest("verifyloginToHBIforNodalOfficer");
+        test = extent.startTest("verifyloginToHBIforNodalOfficer");
 		String actualValue = login.loginToHBIforNodalOfficer();
 		String  expectedValue = "Chandra DV";
-		AssertJUnit.assertEquals(actualValue, expectedValue);
+		Assert.assertEquals(actualValue, expectedValue);
 	}
 	
 	

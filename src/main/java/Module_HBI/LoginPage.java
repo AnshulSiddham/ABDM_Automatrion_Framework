@@ -81,7 +81,6 @@ public class LoginPage extends TestBase
 		WebElement profileName               = driver.findElement(By.xpath(ReadExcel.readExcelFile(19, 1)));
 		
 		String userName = profileName.getText();
-		System.out.println("USER NAME + " +userName);
 		return userName;
 		
 	}
