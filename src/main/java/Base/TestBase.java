@@ -30,55 +30,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class TestBase extends Listener
+public class TestBase // extends Listener
 {
-	// extra code 
-	public static ExtentSparkReporter spark;
-    public static ExtentReports extent;
-    public static ExtentTest test;
-	
-    @BeforeSuite
-    public void setUp()
-    {
-        spark = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/MyOwnReport.html");
-        extent = new ExtentReports();
-        extent.attachReporter(spark);
-         
-        extent.setSystemInfo("OS", "Windows 10");
-        extent.setSystemInfo("Host Name", "LTILPUN22001550");
-        extent.setSystemInfo("Environment", "QA");
-        extent.setSystemInfo("User Name", "Anshul Siddham");
-    }
-     
-    @AfterMethod
-    public void getResult(ITestResult result) throws IOException
-    {
-        if(result.getStatus() == ITestResult.FAILURE)
-        {
-            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
-            test.fail(result.getThrowable());
-            
-            String screeshotPath = Screenshot.getScreenshot(result.getName());
-            test.log(Status.FAIL, (Markup) test.addScreenCaptureFromPath(screeshotPath));
-        }
-        else if(result.getStatus() == ITestResult.SUCCESS)
-        {
-            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
-        }
-        else
-        {
-            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
-            test.skip(result.getThrowable());
-        }
-    }
-     
-    @AfterSuite
-    public void tearDown()
-    {
-        extent.flush();
-    }
-	
-	
 	public String readPropertyFile(String value) throws IOException
 	{
 		Properties prop = new Properties();
@@ -135,8 +88,56 @@ public class TestBase extends Listener
 		driver.get(readPropertyFile("url"));
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
 	}
+	
+// extra code to generate EXTENT Report
+		public static ExtentSparkReporter spark;
+	    public static ExtentReports extent;
+	    public static ExtentTest test;
+		
+	    @BeforeSuite
+	    public void beforeSuit()
+	    {
+	        spark = new ExtentSparkReporter(System.getProperty("user.dir") +"/MyOwnReport.html");
+	        extent = new ExtentReports();
+	        extent.attachReporter(spark);
+	         
+	        extent.setSystemInfo("OS", "Windows 10");
+	        extent.setSystemInfo("Host Name", "LTILPUN22001550");
+	        extent.setSystemInfo("Environment", "QA");
+	        extent.setSystemInfo("User Name", "Anshul Siddham");
+	    }
+	     
+	    @AfterMethod
+	    public void getResult(ITestResult result) throws IOException
+	    {
+	        if(result.getStatus() == ITestResult.FAILURE)
+	        {
+	            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
+	            test.fail(result.getThrowable());
+	            
+	            String screeshotPath = Screenshot.getScreenshot(result.getName());
+	            test.log(Status.FAIL, (Markup) test.addScreenCaptureFromPath(screeshotPath));
+	        }
+	        else if(result.getStatus() == ITestResult.SUCCESS)
+	        {
+	            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+	        }
+	        else
+	        {
+	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+	            test.skip(result.getThrowable());
+	        }
+	        driver.quit();
+	    }
+	     
+	    @AfterSuite
+	    public void tearDown()
+	    {
+	        extent.flush();
+	    }
+		
+		
 	
 	
 	

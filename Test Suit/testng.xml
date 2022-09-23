@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Demo_Suit">
-
-<listeners>
-  <listener class-name="ExtentReport_Listener.Demo_Listener"/>
-</listeners>
-
-  <test name="Test">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCases_UI.HBI_LoginPageTest">
-                <methods>
-                    <include name="verifyMOHFWLogo" />
-                    <include name="verifyAzadiLogo" />
-                </methods>
-            </class>
-      <class name="TestCases_UI.HBI_HomePageTest">
-                <methods>
-                    <include name="verifyProfile" />
-                </methods>
-      </class>
+      <class name="TestCases_UI.HBI_HomePageTest"/>
+      <class name="TestCases_UI.HBI_LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Demo_Suit -->
+</suite> <!-- Suite -->

@@ -46,9 +46,7 @@ public class HBI_LoginPageTest extends TestBase
 		
 //	    test = extent.startTest("verify MOHFW Logo");
 		boolean value = login.mohfwLogo();
-		Assert.assertEquals(value, true);
-		
-		
+		Assert.assertEquals(value, true);	
 	}
 	
 	@Test(enabled = true, priority = 1)
@@ -58,7 +56,7 @@ public class HBI_LoginPageTest extends TestBase
 		
 //		test = extent.startTest("verify Azadi Logo");
 		boolean value = login.azadiLogo();
-		Assert.assertEquals(value, false);
+		Assert.assertEquals(value, true);
 	}
 	
 	@Test(enabled = false, priority = 3)
@@ -87,12 +85,12 @@ public class HBI_LoginPageTest extends TestBase
 		Assert.assertEquals(actualValue, expectedValue);
 	}
 	
-	@AfterMethod
-	public void exit(ITestResult result) throws IOException 
-	{	
-		getResult(result);
+//	@AfterMethod
+//	public void exit(ITestResult result) throws IOException 
+//	{	
+//		getResult(result);
 //		afterMethod(result);
-		driver.quit();
-	}
+//		driver.quit();
+//	}
 
 }

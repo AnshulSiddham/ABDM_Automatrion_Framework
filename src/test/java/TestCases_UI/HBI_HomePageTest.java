@@ -54,13 +54,13 @@ public class HBI_HomePageTest extends TestBase
 		Assert.assertEquals(actualEmail, expectedEmail);
 	}
 	
-	@AfterMethod
-	public void exit(ITestResult result) throws IOException 
-	{	
-		getResult(result);
-//		afterMethod(result);
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void exit(ITestResult result) throws IOException 
+//	{	
+//		getResult(result);
+////	afterMethod(result);
+//		driver.quit();
+//	}
 	
 
 }
