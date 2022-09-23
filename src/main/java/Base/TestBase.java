@@ -44,8 +44,8 @@ public class TestBase extends Listener
         extent = new ExtentReports();
         extent.attachReporter(spark);
          
-        extent.setSystemInfo("OS", "Windows");
-        extent.setSystemInfo("Host Name", "10711204");
+        extent.setSystemInfo("OS", "Windows 10");
+        extent.setSystemInfo("Host Name", "LTILPUN22001550");
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("User Name", "Anshul Siddham");
     }

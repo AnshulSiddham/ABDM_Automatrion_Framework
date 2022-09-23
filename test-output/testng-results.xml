@@ -1,87 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="8" passed="2" failed="1" skipped="0">
+<testng-results ignored="7" total="12" passed="2" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T10:55:05 IST" name="demo" finished-at="2022-09-23T10:55:58 IST" duration-ms="52289">
+  <suite started-at="2022-09-23T11:48:10 IST" name="Suite1" finished-at="2022-09-23T11:48:53 IST" duration-ms="43147">
     <groups>
     </groups>
-    <test started-at="2022-09-23T10:55:05 IST" name="Test1" finished-at="2022-09-23T10:55:58 IST" duration-ms="52289">
+    <test started-at="2022-09-23T11:48:10 IST" name="Test1" finished-at="2022-09-23T11:48:53 IST" duration-ms="43147">
       <class name="TestCases_UI.HBI_HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:05 IST" name="setUp" finished-at="2022-09-23T10:55:05 IST" duration-ms="552" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:10 IST" name="setUp" finished-at="2022-09-23T11:48:10 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:05 IST" name="setup" finished-at="2022-09-23T10:55:32 IST" duration-ms="26446" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:10 IST" name="setup" finished-at="2022-09-23T11:48:38 IST" duration-ms="27635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:32 IST" name="verifyProfile" finished-at="2022-09-23T10:55:37 IST" duration-ms="5396" status="PASS">
+        <test-method signature="verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:38 IST" name="verifyProfile" finished-at="2022-09-23T11:48:41 IST" duration-ms="2989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProfile -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:37 IST" name="exit" finished-at="2022-09-23T10:55:38 IST" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:41 IST" name="exit" finished-at="2022-09-23T11:48:41 IST" duration-ms="477" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:38 IST" name="getResult" finished-at="2022-09-23T10:55:38 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:41 IST" name="getResult" finished-at="2022-09-23T11:48:41 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:58 IST" name="tearDown" finished-at="2022-09-23T10:55:58 IST" duration-ms="772" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_UI.HBI_HomePageTest@443118b0]" started-at="2022-09-23T11:48:54 IST" name="tearDown" finished-at="2022-09-23T11:48:55 IST" duration-ms="1060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases_UI.HBI_HomePageTest -->
       <class name="TestCases_UI.HBI_LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:38 IST" name="setup" finished-at="2022-09-23T10:55:41 IST" duration-ms="3678" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:42 IST" name="setup" finished-at="2022-09-23T11:48:45 IST" duration-ms="3748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:41 IST" name="verifyAzadiLogo" finished-at="2022-09-23T10:55:48 IST" duration-ms="6973" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAzadiLogo -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:48 IST" name="exit" finished-at="2022-09-23T10:55:49 IST" duration-ms="350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- exit -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:49 IST" name="getResult" finished-at="2022-09-23T10:55:49 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:49 IST" name="setup" finished-at="2022-09-23T10:55:52 IST" duration-ms="3301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:52 IST" name="verifyMOHFWLogo" finished-at="2022-09-23T10:55:57 IST" duration-ms="5300" status="FAIL">
+        <test-method signature="verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:45 IST" name="verifyAzadiLogo" finished-at="2022-09-23T11:48:53 IST" duration-ms="7526" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -94,7 +64,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:829)
-at TestCases_UI.HBI_LoginPageTest.verifyMOHFWLogo(HBI_LoginPageTest.java:49)
+at TestCases_UI.HBI_LoginPageTest.verifyAzadiLogo(HBI_LoginPageTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,30 +98,280 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMOHFWLogo -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:57 IST" name="exit" finished-at="2022-09-23T10:55:57 IST" duration-ms="305" status="PASS">
+        </test-method> <!-- verifyAzadiLogo -->
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="exit" finished-at="2022-09-23T11:48:53 IST" duration-ms="618" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAzadiLogo status=FAILURE method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader 'app')
+at Base.TestBase.getResult(TestBase.java:62)
+at TestCases_UI.HBI_LoginPageTest.exit(HBI_LoginPageTest.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663913933936" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663913933941" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="verifyMOHFWLogo" finished-at="2022-09-23T11:48:53 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader 'app')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader 'app')
+at Base.TestBase.getResult(TestBase.java:62)
+at TestCases_UI.HBI_LoginPageTest.exit(HBI_LoginPageTest.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMOHFWLogo -->
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="exit" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663913933955" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@3c46e67a]" started-at="2022-09-23T11:48:53 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663913933956" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- TestCases_UI.HBI_LoginPageTest -->
+      <class name="TestCases_UI.Demo_Class">
+        <test-method signature="functionality1Test1()[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:41 IST" name="functionality1Test1" finished-at="2022-09-23T11:48:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- functionality1Test1 -->
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:41 IST" name="exit" finished-at="2022-09-23T11:48:41 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality1Test1 status=SUCCESS method=Demo_Class.functionality1Test1()[pri:0, instance:TestCases_UI.Demo_Class@557caf28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:57 IST" name="getResult" finished-at="2022-09-23T10:55:58 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:41 IST" name="getResult" finished-at="2022-09-23T11:48:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
+                <![CDATA[[TestResult name=functionality1Test1 status=SUCCESS method=Demo_Class.functionality1Test1()[pri:0, instance:TestCases_UI.Demo_Class@557caf28] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-      </class> <!-- TestCases_UI.HBI_LoginPageTest -->
+        <test-method signature="functionality1Test2()[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:41 IST" name="functionality1Test2" finished-at="2022-09-23T11:48:41 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Sakinala] but found [Krishna]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Sakinala] but found [Krishna]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at TestCases_UI.Demo_Class.functionality1Test2(Demo_Class.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- functionality1Test2 -->
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:41 IST" name="exit" finished-at="2022-09-23T11:48:42 IST" duration-ms="29" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality1Test2 status=FAILURE method=Demo_Class.functionality1Test2()[pri:0, instance:TestCases_UI.Demo_Class@557caf28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LTILPUN22001550', ip: '192.168.45.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\10711204\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53314/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'LTILPUN22001550', ip: '192.168.45.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\10711204\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53314}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53314/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:349)
+at Utility.Screenshot.getScreenshot(Screenshot.java:26)
+at Base.TestBase.getResult(TestBase.java:61)
+at TestCases_UI.Demo_Class.exit(Demo_Class.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.Demo_Class@557caf28]" started-at="2022-09-23T11:48:42 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663913922032" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- TestCases_UI.Demo_Class -->
     </test> <!-- Test1 -->
-  </suite> <!-- demo -->
+  </suite> <!-- Suite1 -->
 </testng-results>

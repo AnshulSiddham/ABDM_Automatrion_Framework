@@ -36,7 +36,7 @@ public class Listener
 			test.log(LogStatus.FAIL, "TEST CASE FAILED IS " +result.getName());
 			test.log(LogStatus.FAIL, "TEST CASE ERROR IS " +result.getThrowable()); // to add error and exception to extent report
 			
-			String screeshotPath = Screenshot.getScreenshot(result.getName());;
+			String screeshotPath = Screenshot.getScreenshot(result.getName());
 			test.log(LogStatus.FAIL, test.addScreenCapture(screeshotPath)); // to add screenshot to extent report
 		}
 		else if(result.getStatus()==ITestResult.SKIP)

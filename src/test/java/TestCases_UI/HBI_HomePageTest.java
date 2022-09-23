@@ -57,6 +57,7 @@ public class HBI_HomePageTest extends TestBase
 	@AfterMethod
 	public void exit(ITestResult result) throws IOException 
 	{	
+		getResult(result);
 //		afterMethod(result);
 		driver.quit();
 	}
