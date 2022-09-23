@@ -102,7 +102,7 @@ public class LoginPage extends TestBase
 		return driver.getCurrentUrl();
 	}
 	
-	public void NodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
+	public void loginNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		WebElement loginRegistrationBtn      = driver.findElement(By.xpath(ReadExcel.readExcelFile(2, 1)));
 		loginRegistrationBtn.click();

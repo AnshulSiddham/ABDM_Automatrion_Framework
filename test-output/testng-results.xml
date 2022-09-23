@@ -1,61 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="2" failed="1" skipped="0">
+<testng-results ignored="5" total="8" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T15:14:06 IST" name="Demo_Suit" finished-at="2022-09-22T15:15:03 IST" duration-ms="57172">
+  <suite started-at="2022-09-23T10:55:05 IST" name="demo" finished-at="2022-09-23T10:55:58 IST" duration-ms="52289">
     <groups>
     </groups>
-    <test started-at="2022-09-22T15:14:06 IST" name="Test" finished-at="2022-09-22T15:15:03 IST" duration-ms="57172">
+    <test started-at="2022-09-23T10:55:05 IST" name="Test1" finished-at="2022-09-23T10:55:58 IST" duration-ms="52289">
       <class name="TestCases_UI.HBI_HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_HomePageTest@4f83df68]" started-at="2022-09-22T15:14:06 IST" name="setup" finished-at="2022-09-22T15:14:33 IST" duration-ms="27520" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:05 IST" name="setUp" finished-at="2022-09-23T10:55:05 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:05 IST" name="setup" finished-at="2022-09-23T10:55:32 IST" duration-ms="26446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@4f83df68]" started-at="2022-09-22T15:14:34 IST" name="verifyProfile" finished-at="2022-09-22T15:14:40 IST" duration-ms="6465" status="PASS">
+        <test-method signature="verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:32 IST" name="verifyProfile" finished-at="2022-09-23T10:55:37 IST" duration-ms="5396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProfile -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@4f83df68]" started-at="2022-09-22T15:14:40 IST" name="exit" finished-at="2022-09-22T15:14:40 IST" duration-ms="441" status="PASS">
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:37 IST" name="exit" finished-at="2022-09-23T10:55:38 IST" duration-ms="445" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@4f83df68] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-      </class> <!-- TestCases_UI.HBI_HomePageTest -->
-      <class name="TestCases_UI.HBI_LoginPageTest">
-        <test-method is-config="true" signature="extentReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:06 IST" name="extentReport" finished-at="2022-09-22T15:14:06 IST" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:38 IST" name="getResult" finished-at="2022-09-23T10:55:38 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extentReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:40 IST" name="setup" finished-at="2022-09-22T15:14:44 IST" duration-ms="3812" status="PASS">
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases_UI.HBI_HomePageTest@397fbdb]" started-at="2022-09-23T10:55:58 IST" name="tearDown" finished-at="2022-09-23T10:55:58 IST" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases_UI.HBI_HomePageTest -->
+      <class name="TestCases_UI.HBI_LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:38 IST" name="setup" finished-at="2022-09-23T10:55:41 IST" duration-ms="3678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:44 IST" name="verifyAzadiLogo" finished-at="2022-09-22T15:14:51 IST" duration-ms="7066" status="PASS">
+        <test-method signature="verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:41 IST" name="verifyAzadiLogo" finished-at="2022-09-23T10:55:48 IST" duration-ms="6973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAzadiLogo -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:51 IST" name="exit" finished-at="2022-09-22T15:14:52 IST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:48 IST" name="exit" finished-at="2022-09-23T10:55:49 IST" duration-ms="350" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4] output={null}]]]>
+                <![CDATA[[TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:52 IST" name="setup" finished-at="2022-09-22T15:14:55 IST" duration-ms="3123" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:49 IST" name="getResult" finished-at="2022-09-23T10:55:49 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:1, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:49 IST" name="setup" finished-at="2022-09-23T10:55:52 IST" duration-ms="3301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:14:55 IST" name="verifyMOHFWLogo" finished-at="2022-09-22T15:15:02 IST" duration-ms="7226" status="FAIL">
+        <test-method signature="verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:52 IST" name="verifyMOHFWLogo" finished-at="2022-09-23T10:55:57 IST" duration-ms="5300" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -68,7 +94,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:829)
-at TestCases_UI.HBI_LoginPageTest.verifyMOHFWLogo(HBI_LoginPageTest.java:50)
+at TestCases_UI.HBI_LoginPageTest.verifyMOHFWLogo(HBI_LoginPageTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,22 +129,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMOHFWLogo -->
-        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:15:02 IST" name="exit" finished-at="2022-09-22T15:15:03 IST" duration-ms="947" status="PASS">
+        <test-method is-config="true" signature="exit(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:57 IST" name="exit" finished-at="2022-09-23T10:55:57 IST" duration-ms="305" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4] output={null}]]]>
+                <![CDATA[[TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:TestCases_UI.HBI_LoginPageTest@2d3379b4]" started-at="2022-09-22T15:15:03 IST" name="endReport" finished-at="2022-09-22T15:15:04 IST" duration-ms="523" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49]" started-at="2022-09-23T10:55:57 IST" name="getResult" finished-at="2022-09-23T10:55:58 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:2, instance:TestCases_UI.HBI_LoginPageTest@5bf0d49] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
+        </test-method> <!-- getResult -->
       </class> <!-- TestCases_UI.HBI_LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Demo_Suit -->
+    </test> <!-- Test1 -->
+  </suite> <!-- demo -->
 </testng-results>

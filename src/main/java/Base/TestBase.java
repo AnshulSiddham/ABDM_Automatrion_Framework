@@ -1,15 +1,9 @@
 package Base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,14 +11,74 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.opera.OperaOptions;
-import org.openqa.selenium.safari.SafariDriver;
-
 import ExtentReport_Listener.Listener;
+import Utility.Screenshot;
+
+//extra code
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+//import com.aventstack.extentreports.reporter.configuration.ChartLocation;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 
 public class TestBase extends Listener
 {
+	// extra code 
+	public static ExtentSparkReporter spark;
+    public static ExtentReports extent;
+    public static ExtentTest test;
+	
+    @BeforeSuite
+    public void setUp()
+    {
+        spark = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/MyOwnReport.html");
+        extent = new ExtentReports();
+        extent.attachReporter(spark);
+         
+        extent.setSystemInfo("OS", "Windows");
+        extent.setSystemInfo("Host Name", "10711204");
+        extent.setSystemInfo("Environment", "QA");
+        extent.setSystemInfo("User Name", "Anshul Siddham");
+    }
+     
+    @AfterMethod
+    public void getResult(ITestResult result) throws IOException
+    {
+        if(result.getStatus() == ITestResult.FAILURE)
+        {
+            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
+            test.fail(result.getThrowable());
+            
+            String screeshotPath = Screenshot.getScreenshot(result.getName());
+            test.log(Status.FAIL, (Markup) test.addScreenCaptureFromPath(screeshotPath));
+        }
+        else if(result.getStatus() == ITestResult.SUCCESS)
+        {
+            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+        }
+        else
+        {
+            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+            test.skip(result.getThrowable());
+        }
+    }
+     
+    @AfterSuite
+    public void tearDown()
+    {
+        extent.flush();
+    }
+	
+	
 	public String readPropertyFile(String value) throws IOException
 	{
 		Properties prop = new Properties();
@@ -83,6 +137,8 @@ public class TestBase extends Listener
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	}
+	
+	
 	
 	
 	

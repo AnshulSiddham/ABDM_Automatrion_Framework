@@ -38,16 +38,17 @@ public class HBI_HomePageTest extends TestBase
 	{
 		initialization();
 		login = new LoginPage();
-		login.NodalOfficer();
+		login.loginNodalOfficer();
 		homePage = new HomePage();
 	}
 	
 	@Test(enabled = true)
 	public void verifyProfile() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-	//	test = extent.createTest("Profile oF Nodal Officer");
+		test = extent.createTest("Profile oF Nodal Officer");
 		
-//		test = extent.startTest("Profile oF Nodal Officer");
+		
+	//	test = extent.startTest("Profile oF Nodal Officer");
 		String expectedEmail = "Chandradv@gmail.com";
 		String actualEmail   = homePage.profile();
 		Assert.assertEquals(actualEmail, expectedEmail);

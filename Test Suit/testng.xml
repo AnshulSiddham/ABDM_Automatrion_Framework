@@ -8,8 +8,17 @@
 
   <test name="Test">
     <classes>
-      <class name="TestCases_UI.HBI_HomePageTest"/>
-      <class name="TestCases_UI.HBI_LoginPageTest"/>
+      <class name="TestCases_UI.HBI_LoginPageTest">
+                <methods>
+                    <include name="verifyMOHFWLogo" />
+                    <include name="verifyAzadiLogo" />
+                </methods>
+            </class>
+      <class name="TestCases_UI.HBI_HomePageTest">
+                <methods>
+                    <include name="verifyProfile" />
+                </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Demo_Suit -->
