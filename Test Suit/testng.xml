@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCases_UI.HBI_HomePageTest"/>
       <class name="TestCases_UI.HBI_LoginPageTest"/>
+      <class name="TestCases_UI.HBI_HomePageTest"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

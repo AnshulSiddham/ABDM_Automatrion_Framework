@@ -12,7 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-//extra code
+import org.testng.IReporter;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -20,6 +20,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
@@ -29,8 +30,10 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import Utility.Screenshot;
 
 
-public class TestBase // extends Listener
+public class TestBase implements IReporter
+
 {
+	private String url;
 	public String readPropertyFile(String value) throws IOException
 	{
 		Properties prop = new Properties();
@@ -72,12 +75,11 @@ public class TestBase // extends Listener
 			driver = new FirefoxDriver(opt1);
 		}
 			
-		
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
 			System.setProperty("webdriver.msedge.driver", "msedgedriver.exe");
 			EdgeOptions opt3 = new EdgeOptions();
-			opt3.addArguments("--disabled-notifications");
+//			opt3.addArguments("--disabled-notifications");
 			driver = new EdgeDriver(opt3);
 					
 		}	
@@ -110,23 +112,24 @@ public class TestBase // extends Listener
 	    @AfterMethod
 	    public void getResult(ITestResult result) throws IOException
 	    {
-	        if(result.getStatus() == ITestResult.FAILURE)
+	        if(result.getStatus() == ITestResult.SUCCESS)
+		        {
+		            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+		        }
+	        else if(result.getStatus() == ITestResult.SKIP)
+	        {
+	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+	        }
+	        else if(result.getStatus() == ITestResult.FAILURE)
 	        {
 	            test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
 	            test.fail(result.getThrowable());
 	            
 	            String screeshotPath = Screenshot.getScreenshot(result.getName());
-	            test.log(Status.FAIL, (Markup) test.addScreenCaptureFromPath(screeshotPath));
+	            test.fail("FAILED TEST CASE SCREENSHOT", MediaEntityBuilder.createScreenCaptureFromPath(screeshotPath).build());
+	         
 	        }
-	        else if(result.getStatus() == ITestResult.SUCCESS)
-	        {
-	            test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
-	        }
-	        else if(result.getStatus() == ITestResult.SKIP)
-	        {
-	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
-	        }
-              driver.close();
+	            driver.close();
 	    }
 	     
 	    @AfterSuite

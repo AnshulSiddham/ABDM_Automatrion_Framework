@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  2 skipped,  3 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,29 +104,20 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifymohfwLink">verifymohfwLink</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginToHBIforHP">verifyLoginToHBIforHP</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyloginToHBIforNodalOfficer">verifyloginToHBIforNodalOfficer</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyMOHFWLogo">verifyMOHFWLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifymohfwLink">verifymohfwLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,12 +133,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyMOHFWLogo">verifyMOHFWLogo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_HomePageTest" class="method navigator-link" hash-for-method="verifyProfile">verifyProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_HomePageTest" class="method navigator-link" hash-for-method="verifyProfile">verifyProfile</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestCases_UI.HBI_LoginPageTest" class="method navigator-link" hash-for-method="verifyloginToHBIforNodalOfficer">verifyloginToHBIforNodalOfficer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -170,6 +161,50 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyLoginToHBIforHP">
+                  </a> <!-- verifyLoginToHBIforHP -->
+                  <span class="method-name">verifyLoginToHBIforHP</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Logout&apos;]&quot;}
+  (Session info: headless chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;LTILPUN22001550&apos;, ip: &apos;172.20.1.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82498ea20362e0bf85b71b364d3aee7e, findElement {using=xpath, value=//button[text()=&apos;Logout&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\10711204\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56810/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82498ea20362e0bf85b71b364d3aee7e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at Module_HBI.LoginPage.loginToHBIforHP(LoginPage.java:53)
+	at TestCases_UI.HBI_LoginPageTest.verifyLoginToHBIforHP(HBI_LoginPageTest.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMOHFWLogo">
+                  </a> <!-- verifyMOHFWLogo -->
+                  <span class="method-name">verifyMOHFWLogo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at TestCases_UI.HBI_LoginPageTest.verifyMOHFWLogo(HBI_LoginPageTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifymohfwLink">
                   </a> <!-- verifymohfwLink -->
                   <span class="method-name">verifymohfwLink</span>
@@ -182,53 +217,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases_UI.HBI_LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginToHBIforHP">
-                  </a> <!-- verifyLoginToHBIforHP -->
-                  <span class="method-name">verifyLoginToHBIforHP</span>
-                  <div class="stack-trace">java.lang.ClassCastException: class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader &apos;app&apos;)
-	at Base.TestBase.getResult(TestBase.java:119)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyloginToHBIforNodalOfficer">
-                  </a> <!-- verifyloginToHBIforNodalOfficer -->
-                  <span class="method-name">verifyloginToHBIforNodalOfficer</span>
-                  <div class="stack-trace">java.lang.ClassCastException: class com.aventstack.extentreports.ExtentTest cannot be cast to class com.aventstack.extentreports.markuputils.Markup (com.aventstack.extentreports.ExtentTest and com.aventstack.extentreports.markuputils.Markup are in unnamed module of loader &apos;app&apos;)
-	at Base.TestBase.getResult(TestBase.java:119)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases_UI.HBI_HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyProfile">
-                  </a> <!-- verifyProfile -->
-                  <span class="method-name">verifyProfile</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -244,9 +232,24 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyMOHFWLogo">
-                  </a> <!-- verifyMOHFWLogo -->
-                  <span class="method-name">verifyMOHFWLogo</span>
+                  <a name="verifyloginToHBIforNodalOfficer">
+                  </a> <!-- verifyloginToHBIforNodalOfficer -->
+                  <span class="method-name">verifyloginToHBIforNodalOfficer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases_UI.HBI_HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProfile">
+                  </a> <!-- verifyProfile -->
+                  <span class="method-name">verifyProfile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,8 +266,8 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases_UI.HBI_HomePageTest&quot;/&gt;
       &lt;class name=&quot;TestCases_UI.HBI_LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;TestCases_UI.HBI_HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -306,34 +309,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifymohfwLink')
+data.setCell(0, 1, 'verifyLoginToHBIforHP')
 data.setCell(0, 2, 'TestCases_UI.HBI_LoginPageTest')
-data.setCell(0, 3, 10618);
+data.setCell(0, 3, 34208);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAzadiLogo')
+data.setCell(1, 1, 'verifyloginToHBIforNodalOfficer')
 data.setCell(1, 2, 'TestCases_UI.HBI_LoginPageTest')
-data.setCell(1, 3, 6571);
+data.setCell(1, 3, 22344);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyMOHFWLogo')
+data.setCell(2, 1, 'verifymohfwLink')
 data.setCell(2, 2, 'TestCases_UI.HBI_LoginPageTest')
-data.setCell(2, 3, 6542);
+data.setCell(2, 3, 10102);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyProfile')
-data.setCell(3, 2, 'TestCases_UI.HBI_HomePageTest')
-data.setCell(3, 3, 3124);
+data.setCell(3, 1, 'verifyAzadiLogo')
+data.setCell(3, 2, 'TestCases_UI.HBI_LoginPageTest')
+data.setCell(3, 3, 7943);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyloginToHBIforNodalOfficer')
+data.setCell(4, 1, 'verifyMOHFWLogo')
 data.setCell(4, 2, 'TestCases_UI.HBI_LoginPageTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 7629);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyLoginToHBIforHP')
-data.setCell(5, 2, 'TestCases_UI.HBI_LoginPageTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'verifyProfile')
+data.setCell(5, 2, 'TestCases_UI.HBI_HomePageTest')
+data.setCell(5, 3, 2728);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -352,7 +355,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases_UI.HBI_LoginPageTest</span>
+              <span class="ignored-class-name">TestCases_UI.HBI_HomePageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -368,96 +371,98 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases_UI.HBI_HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases_UI.HBI_LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuit</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">404 ms</span>
+                <span class="method-start">822 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyProfile</span>
-                <span class="method-start">24015 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instanc...)</span>
-                <span class="method-start">27143 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases_UI.HBI_LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">27206 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyMOHFWLogo</span>
-                <span class="method-start">29453 ms</span>
+                <span class="method-start">7175 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=verifyMOHFWLogo status=SUCCESS method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:1, in...)</span>
-                <span class="method-start">35996 ms</span>
+                <span class="method-name">getResult([TestResult name=verifyMOHFWLogo status=FAILURE method=HBI_LoginPageTest.verifyMOHFWLogo()[pri:1, in...)</span>
+                <span class="method-start">14811 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">36033 ms</span>
+                <span class="method-start">15477 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAzadiLogo</span>
-                <span class="method-start">38738 ms</span>
+                <span class="method-start">18870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=verifyAzadiLogo status=SUCCESS method=HBI_LoginPageTest.verifyAzadiLogo()[pri:2, in...)</span>
-                <span class="method-start">45311 ms</span>
+                <span class="method-start">26817 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">45356 ms</span>
+                <span class="method-start">26927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyloginToHBIforNodalOfficer</span>
+                <span class="method-start">30269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyloginToHBIforNodalOfficer status=SUCCESS method=HBI_LoginPageTest.verifylogin...)</span>
+                <span class="method-start">52615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginToHBIforHP</span>
+                <span class="method-start">60351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyLoginToHBIforHP status=FAILURE method=HBI_LoginPageTest.verifyLoginToHBIforHP...)</span>
+                <span class="method-start">94566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">94743 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifymohfwLink</span>
-                <span class="method-start">47588 ms</span>
+                <span class="method-start">98538 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getResult([TestResult name=verifymohfwLink status=FAILURE method=HBI_LoginPageTest.verifymohfwLink()[pri:3, in...)</span>
-                <span class="method-start">58208 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">58349 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginToHBIforHP</span>
-                <span class="method-start">58351 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult</span>
-                <span class="method-start">58355 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">58356 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyloginToHBIforNodalOfficer</span>
-                <span class="method-start">58357 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult</span>
-                <span class="method-start">58360 ms</span>
+                <span class="method-name">getResult([TestResult name=verifymohfwLink status=FAILURE method=HBI_LoginPageTest.verifymohfwLink()[pri:5, in...)</span>
+                <span class="method-start">108643 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases_UI.HBI_HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">108822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProfile</span>
+                <span class="method-start">134650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=verifyProfile status=SUCCESS method=HBI_HomePageTest.verifyProfile()[pri:0, instanc...)</span>
+                <span class="method-start">137381 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases_UI.HBI_LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58413 ms</span>
+                <span class="method-start">137657 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,16 +4,10 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import Base.TestBase;
-import ExtentReport_Listener.Listener;
 import Module_HBI.LoginPage;
 
 public class HBI_LoginPageTest extends TestBase
@@ -32,7 +26,7 @@ public class HBI_LoginPageTest extends TestBase
 	{
 		test = extent.createTest("MOHFW Logo");
 		boolean value = login.mohfwLogo();
-		Assert.assertEquals(value, true);	
+		Assert.assertEquals(value, false);	
 	}
 	
 	@Test(enabled = true, priority = 2)
@@ -43,7 +37,7 @@ public class HBI_LoginPageTest extends TestBase
 		Assert.assertEquals(value, true);
 	}
 	
-	@Test(enabled = true, priority = 3)
+	@Test(enabled = true, priority = 5)
 	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
         test = extent.createTest("MOHFW link at Footer");
@@ -60,7 +54,7 @@ public class HBI_LoginPageTest extends TestBase
 		Assert.assertEquals(value, true);
 	}
 	
-	@Test(enabled = true, priority = 5)
+	@Test(enabled = true, priority = 3)
 	public void verifyloginToHBIforNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
 	{
         test = extent.createTest("Login to HBI with Nodal Officer");

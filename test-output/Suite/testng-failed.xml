@@ -5,9 +5,9 @@
     <classes>
       <class name="TestCases_UI.HBI_LoginPageTest">
         <methods>
-          <include name="verifyloginToHBIforNodalOfficer"/>
           <include name="verifymohfwLink"/>
           <include name="getResult"/>
+          <include name="verifyMOHFWLogo"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="beforeSuit"/>
