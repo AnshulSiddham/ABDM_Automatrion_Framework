@@ -51,7 +51,7 @@ public class TestBase // extends Listener
 		ChromeOptions opt = new ChromeOptions(); 
 		opt.addArguments("--disable-notifications"); // to disable browser exception
 	//	opt.addArguments("--incognito"); // to run the test in incognito mode 
-	//	opt.addArguments("--headless");
+		opt.addArguments("--headless");
 		opt.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		opt.addArguments("--no-sandbox"); // Bypass OS security model
 		opt.addArguments("disable-infobars"); // disabling infobars
@@ -125,9 +125,8 @@ public class TestBase // extends Listener
 	        else if(result.getStatus() == ITestResult.SKIP)
 	        {
 	            test.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
-	            test.skip(result.getThrowable());
 	        }
-	        driver.quit();
+              driver.close();
 	    }
 	     
 	    @AfterSuite

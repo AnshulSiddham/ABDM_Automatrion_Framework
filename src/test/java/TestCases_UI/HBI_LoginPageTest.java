@@ -20,18 +20,6 @@ public class HBI_LoginPageTest extends TestBase
 {
 	LoginPage login;
 	
-//	@BeforeSuite
-//	public void extentReport()
-//	{
-//		beforeSuit();
-//	}
-//	
-//	@AfterSuite
-//	public void endReport()
-//	{
-//		afterSuit();
-//	}
-//	
 	@BeforeMethod
 	public void setup() throws IOException
 	{                                                                  
@@ -39,58 +27,46 @@ public class HBI_LoginPageTest extends TestBase
 		login = new LoginPage();
 	}
 	
-	@Test(enabled = true, priority = 2)
+	@Test(enabled = true, priority = 1)
 	public void verifyMOHFWLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.createTest("MOHFW Logo");
-		
-//	    test = extent.startTest("verify MOHFW Logo");
 		boolean value = login.mohfwLogo();
 		Assert.assertEquals(value, true);	
 	}
 	
-	@Test(enabled = true, priority = 1)
+	@Test(enabled = true, priority = 2)
 	public void verifyAzadiLogo() throws EncryptedDocumentException, IOException
 	{
 		test = extent.createTest("Azadi Logo");
-		
-//		test = extent.startTest("verify Azadi Logo");
 		boolean value = login.azadiLogo();
 		Assert.assertEquals(value, true);
 	}
 	
-	@Test(enabled = false, priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void verifymohfwLink() throws EncryptedDocumentException, IOException, InterruptedException
 	{
- //     test = extent.startTest("verifymohfwLink");
+        test = extent.createTest("MOHFW link at Footer");
 		String expectedURL = "https://www.mohfw.gov.in/";
 		String actualURL = login.mohfwLink();
 		Assert.assertEquals(actualURL, expectedURL);
 	}
 	
-	@Test(enabled = false, priority = 4)
+	@Test(enabled = true, priority = 4)
 	public void verifyLoginToHBIforHP() throws InterruptedException, IOException
 	{
-//      test = extent.startTest("verifyLoginToHBIforHP");
+        test = extent.createTest("Login to HBI with Healthcare Professional");
 		boolean value = login.loginToHBIforHP();
 		Assert.assertEquals(value, true);
 	}
 	
-	@Test(enabled = false, priority = 5)
+	@Test(enabled = true, priority = 5)
 	public void verifyloginToHBIforNodalOfficer() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-//      test = extent.startTest("verifyloginToHBIforNodalOfficer");
+        test = extent.createTest("Login to HBI with Nodal Officer");
 		String actualValue = login.loginToHBIforNodalOfficer();
 		String  expectedValue = "Chandra DV";
 		Assert.assertEquals(actualValue, expectedValue);
 	}
-	
-//	@AfterMethod
-//	public void exit(ITestResult result) throws IOException 
-//	{	
-//		getResult(result);
-//		afterMethod(result);
-//		driver.quit();
-//	}
 
 }

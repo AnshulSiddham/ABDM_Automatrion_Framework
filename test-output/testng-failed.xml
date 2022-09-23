@@ -3,15 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestCases_UI.HBI_HomePageTest">
+      <class name="TestCases_UI.HBI_LoginPageTest">
         <methods>
+          <include name="verifyloginToHBIforNodalOfficer"/>
+          <include name="verifymohfwLink"/>
           <include name="getResult"/>
           <include name="tearDown"/>
           <include name="setup"/>
           <include name="beforeSuit"/>
-          <include name="verifyProfile"/>
+          <include name="verifyLoginToHBIforHP"/>
         </methods>
-      </class> <!-- TestCases_UI.HBI_HomePageTest -->
+      </class> <!-- TestCases_UI.HBI_LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
